@@ -1,12 +1,14 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 
+console.time("Execution Time");
+
 (async () => {
   const priceOyeProducts = [];
 
   const browser = await puppeteer.launch({
     timeout: 0,
-    headless: false, // Run in headless mode
+    headless: false, // Set headless mode to false for browser visibility
     defaultViewport: null, // Set viewport to null for full page rendering
     args: [
       "--no-sandbox", // Disable sandbox mode
@@ -22,7 +24,12 @@ const fs = require("fs");
   // Disable image loading
   await homepage.setRequestInterception(true);
   homepage.on("request", (request) => {
-    if (request.resourceType() === "image") {
+    if (
+      request.resourceType() === "image" ||
+      request.resourceType() === "stylesheet" ||
+      request.resourceType() === "script" ||
+      request.resourceType() === "font"
+    ) {
       request.abort();
     } else {
       request.continue();
@@ -45,7 +52,12 @@ const fs = require("fs");
     // Disable image loading
     await categoryPage.setRequestInterception(true);
     categoryPage.on("request", (request) => {
-      if (request.resourceType() === "image") {
+      if (
+        request.resourceType() === "image" ||
+        request.resourceType() === "stylesheet" ||
+        // request.resourceType() === "script" ||
+        request.resourceType() === "font"
+      ) {
         request.abort();
       } else {
         request.continue();
@@ -107,5 +119,7 @@ const fs = require("fs");
   await browser.close();
 
   const jsonData = JSON.stringify(priceOyeProducts, null, 2);
-  fs.writeFileSync("scraped_data.json", jsonData);
+  fs.writeFileSync("priceOye_data.json", jsonData);
+
+  console.timeEnd("Execution Time");
 })();
