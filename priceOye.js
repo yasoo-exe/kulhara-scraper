@@ -19,6 +19,8 @@ console.time("Execution Time");
     ],
   });
 
+  /*  code for getting all the links of categories, not using it because the tool is right now being limited to scraping 
+  
   const homepage = await browser.newPage();
 
   // Disable image loading
@@ -44,7 +46,13 @@ console.time("Execution Time");
     elements.map((element) => element.href)
   );
 
-  console.log("Found links:", links);
+  console.log("Found links:", links); */
+
+  const links = [
+    "https://www.priceoye.pk/mobiles",
+    "https://www.priceoye.pk/tablets",
+    "https://www.priceoye.pk/laptops",
+  ];
 
   for (const link of links) {
     const categoryPage = await browser.newPage();
