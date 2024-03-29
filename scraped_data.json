@@ -2450,11 +2450,6 @@
     "productLink": "https://priceoye.pk/mobiles/itel/itel-a49"
   },
   {
-    "title": "Itel A49",
-    "price": "14,799",
-    "productLink": "https://priceoye.pk/mobiles/itel/itel-a49"
-  },
-  {
     "title": "itel Value 110",
     "price": "2,899",
     "productLink": "https://priceoye.pk/mobiles/itel/itel-value-110"
@@ -2495,6 +2490,11 @@
     "productLink": "https://priceoye.pk/mobiles/faywa/faywa-l9"
   },
   {
+    "title": "Gionee Q26",
+    "price": "3,499",
+    "productLink": "https://priceoye.pk/mobiles/gionee/gionee-q26"
+  },
+  {
     "title": "X-CELL XL-602",
     "price": "2,699",
     "productLink": "https://priceoye.pk/mobiles/x-cell/x-cell-xl-602"
@@ -2515,14 +2515,14 @@
     "productLink": "https://priceoye.pk/mobiles/nokia/nokia-5710"
   },
   {
-    "title": "Oppo A77s",
-    "price": "74,999",
-    "productLink": "https://priceoye.pk/mobiles/oppo/oppo-a77s"
-  },
-  {
     "title": "Samsung Galaxy S23",
     "price": "359,999",
     "productLink": "https://priceoye.pk/mobiles/samsung/samsung-galaxy-s23"
+  },
+  {
+    "title": "Oppo A77s",
+    "price": "74,999",
+    "productLink": "https://priceoye.pk/mobiles/oppo/oppo-a77s"
   },
   {
     "title": "Infinix Smart 6 HD",
@@ -6445,6 +6445,11 @@
     "productLink": "https://priceoye.pk/wireless-earbuds/xiaomi/redmi-buds-3-lite"
   },
   {
+    "title": "Haylou X1 Neo Earbuds",
+    "price": "3,799",
+    "productLink": "https://priceoye.pk/wireless-earbuds/haylou/haylou-x1-neo-earbuds"
+  },
+  {
     "title": "Ronin R-840 Earbuds",
     "price": "3,799",
     "productLink": "https://priceoye.pk/wireless-earbuds/ronin/ronin-r-840-earbuds"
@@ -6453,11 +6458,6 @@
     "title": "Anker Soundcore Life Q35 Headphones",
     "price": "23,049",
     "productLink": "https://priceoye.pk/wireless-earbuds/anker/anker-soundcore-life-q35-headphones"
-  },
-  {
-    "title": "Haylou X1 Neo Earbuds",
-    "price": "3,799",
-    "productLink": "https://priceoye.pk/wireless-earbuds/haylou/haylou-x1-neo-earbuds"
   },
   {
     "title": "JBL Tune 760NC Wireless Headphones",
@@ -6890,14 +6890,14 @@
     "productLink": "https://priceoye.pk/wireless-earbuds/audionic/audionic-airbud-435-mini-wireless-earbuds"
   },
   {
-    "title": "Ronin R-290 Mini Earbuds",
-    "price": "4,199",
-    "productLink": "https://priceoye.pk/wireless-earbuds/ronin/ronin-r-290-mini-14-earbuds"
-  },
-  {
     "title": "OnePlus Nord Buds True Wireless Earbuds",
     "price": "10,699",
     "productLink": "https://priceoye.pk/wireless-earbuds/oneplus/oneplus-nord-buds-true-wireless-earbuds"
+  },
+  {
+    "title": "Ronin R-290 Mini Earbuds",
+    "price": "4,199",
+    "productLink": "https://priceoye.pk/wireless-earbuds/ronin/ronin-r-290-mini-14-earbuds"
   },
   {
     "title": "Soundpeats RunFree Lite Sport Headphones",
@@ -7380,6 +7380,11 @@
     "productLink": "https://priceoye.pk/wireless-earbuds/baseus/baseus-bowie-h1i-anc-headphones"
   },
   {
+    "title": "Oraimo OEB-E74D Necklace 2 Wireless Earphone",
+    "price": "3,999",
+    "productLink": "https://priceoye.pk/wireless-earbuds/oraimo/oraimo-oeb-e74d-necklace-2-wireless-earphone"
+  },
+  {
     "title": "Realme Buds Q2s",
     "price": "6,649",
     "productLink": "https://priceoye.pk/wireless-earbuds/realme/realme-buds-q2s"
@@ -7428,11 +7433,6 @@
     "title": "Apple AirPods Max",
     "price": "168,999",
     "productLink": "https://priceoye.pk/wireless-earbuds/apple/apple-airpods-max"
-  },
-  {
-    "title": "Oraimo OEB-E74D Necklace 2 Wireless Earphone",
-    "price": "3,999",
-    "productLink": "https://priceoye.pk/wireless-earbuds/oraimo/oraimo-oeb-e74d-necklace-2-wireless-earphone"
   },
   {
     "title": "JBL Headset T720BT Wireless Headphones",
@@ -8575,6 +8575,46 @@
     "productLink": "https://priceoye.pk/wireless-earbuds/xiaomi/redmi-airdots-3"
   },
   {
+    "title": "Haylou GT1 Pro True Wireless Earbuds",
+    "price": "4,249",
+    "productLink": "https://priceoye.pk/wireless-earbuds/haylou/haylou"
+  },
+  {
+    "title": "Haylou G3 Gaming Earbuds",
+    "price": "8,799",
+    "productLink": "https://priceoye.pk/wireless-earbuds/haylou/haylou-g3-gaming-earbuds"
+  },
+  {
+    "title": "QCY M18 Wireless Earbuds",
+    "price": "3,099",
+    "productLink": "https://priceoye.pk/wireless-earbuds/qcy/qcy-m18-twy-wireless-earbuds"
+  },
+  {
+    "title": "QCY T10 Wireless Earbuds",
+    "price": "4,799",
+    "productLink": "https://priceoye.pk/wireless-earbuds/qcy/qcy-t10-wireless-earbuds"
+  },
+  {
+    "title": "QCY T1C TWS Bluetooth Earphones",
+    "price": "3,399",
+    "productLink": "https://priceoye.pk/wireless-earbuds/qcy/qcy-t1c-tws-bluetooth-earphones"
+  },
+  {
+    "title": "OnePlus Wireless Buds Z",
+    "price": "11,199",
+    "productLink": "https://priceoye.pk/wireless-earbuds/oneplus/oneplus-wireless-buds-z"
+  },
+  {
+    "title": "OnePlus Wireless Buds Z2",
+    "price": "13,299",
+    "productLink": "https://priceoye.pk/wireless-earbuds/oneplus/oneplus-wireless-buds-z2"
+  },
+  {
+    "title": "OnePlus Buds Pro 2",
+    "price": "31,699",
+    "productLink": "https://priceoye.pk/wireless-earbuds/oneplus/oneplus-buds-pro-2"
+  },
+  {
     "title": "Xiaomi Buds 3T Pro",
     "price": "18,999",
     "productLink": "https://priceoye.pk/wireless-earbuds/xiaomi/mi-buds-3t-pro"
@@ -8668,46 +8708,6 @@
     "title": "Tronsmart Apollo Hybrid Active Noise Cancelling Headset (Q10)",
     "price": "9,599",
     "productLink": "https://priceoye.pk/wireless-earbuds/tronsmart/tronsmart-apollo-hybrid-active-noise-cancelling-headset-q10"
-  },
-  {
-    "title": "Haylou GT1 Pro True Wireless Earbuds",
-    "price": "4,249",
-    "productLink": "https://priceoye.pk/wireless-earbuds/haylou/haylou"
-  },
-  {
-    "title": "Haylou G3 Gaming Earbuds",
-    "price": "8,799",
-    "productLink": "https://priceoye.pk/wireless-earbuds/haylou/haylou-g3-gaming-earbuds"
-  },
-  {
-    "title": "QCY M18 Wireless Earbuds",
-    "price": "3,099",
-    "productLink": "https://priceoye.pk/wireless-earbuds/qcy/qcy-m18-twy-wireless-earbuds"
-  },
-  {
-    "title": "QCY T10 Wireless Earbuds",
-    "price": "4,799",
-    "productLink": "https://priceoye.pk/wireless-earbuds/qcy/qcy-t10-wireless-earbuds"
-  },
-  {
-    "title": "QCY T1C TWS Bluetooth Earphones",
-    "price": "3,399",
-    "productLink": "https://priceoye.pk/wireless-earbuds/qcy/qcy-t1c-tws-bluetooth-earphones"
-  },
-  {
-    "title": "OnePlus Wireless Buds Z",
-    "price": "11,199",
-    "productLink": "https://priceoye.pk/wireless-earbuds/oneplus/oneplus-wireless-buds-z"
-  },
-  {
-    "title": "OnePlus Wireless Buds Z2",
-    "price": "13,299",
-    "productLink": "https://priceoye.pk/wireless-earbuds/oneplus/oneplus-wireless-buds-z2"
-  },
-  {
-    "title": "OnePlus Buds Pro 2",
-    "price": "31,699",
-    "productLink": "https://priceoye.pk/wireless-earbuds/oneplus/oneplus-buds-pro-2"
   },
   {
     "title": "Soundpeats Wireless Earbuds T2",
@@ -9260,6 +9260,11 @@
     "productLink": "https://priceoye.pk/wireless-earbuds/audionic/audionic-crystal-airbud-575"
   },
   {
+    "title": "Infinix XE08 Wireless Earbuds",
+    "price": "2,599",
+    "productLink": "https://priceoye.pk/wireless-earbuds/infinix/infinix-xe08-wireless-earbuds"
+  },
+  {
     "title": "Ronin Wireless Headphone (R-7700)",
     "price": "3,799",
     "productLink": "https://priceoye.pk/wireless-earbuds/ronin/ronin-wireless-headphone-r-7700"
@@ -9268,11 +9273,6 @@
     "title": "Anker Soundcore Life Q20 Plus Headphones",
     "price": "18,399",
     "productLink": "https://priceoye.pk/wireless-earbuds/anker/anker-soundcore-life-q20-plus-headphones"
-  },
-  {
-    "title": "Infinix XE08 Wireless Earbuds",
-    "price": "2,599",
-    "productLink": "https://priceoye.pk/wireless-earbuds/infinix/infinix-xe08-wireless-earbuds"
   },
   {
     "title": "JBL Tune 500BT Wireless Headphones",
@@ -9500,6 +9500,11 @@
     "productLink": "https://priceoye.pk/wireless-earbuds/audionic/audionic-blue-beats-bluetooth-headphone-b-999"
   },
   {
+    "title": "Haino Teko ENC 5 Pro Wireless Earbuds",
+    "price": "3,999",
+    "productLink": "https://priceoye.pk/wireless-earbuds/haino-teko/haino-teko-enc-pro"
+  },
+  {
     "title": "Joyroom TWS Wireless Earbuds (TN1)",
     "price": "5,199",
     "productLink": "https://priceoye.pk/wireless-earbuds/joyroom/joyroom-tn1-tws-wireless-earbuds"
@@ -9508,11 +9513,6 @@
     "title": "Sony RF Wireless Headphones MDR-RF895RK",
     "price": "15,000",
     "productLink": "https://priceoye.pk/wireless-earbuds/sony/sony-rf-wireless-headphones-mdr-rf895rk"
-  },
-  {
-    "title": "Haino Teko ENC 5 Pro Wireless Earbuds",
-    "price": "3,999",
-    "productLink": "https://priceoye.pk/wireless-earbuds/haino-teko/haino-teko-enc-pro"
   },
   {
     "title": "Audionic Blue Beats Bluetooth Headphone (B-334)",
@@ -11445,6 +11445,11 @@
     "productLink": "https://priceoye.pk/mobile-chargers/sigma/sigma-elite-class-qc2-0-super-fast-charger-sqc-3"
   },
   {
+    "title": "Tronsmart Wall Charger WCP02 (60W)",
+    "price": "4,399",
+    "productLink": "https://priceoye.pk/mobile-chargers/tronsmart/tronsmart-wcp02"
+  },
+  {
     "title": "Anker Select Charger 20W 3 Pin (A2347K21)",
     "price": "3,199",
     "productLink": "https://priceoye.pk/mobile-chargers/anker/anker-select-charger-20w-3-pin"
@@ -11453,11 +11458,6 @@
     "title": "Joyroom ZQ-LG3028E3 Dual Port Fast Charger 20W",
     "price": "1,799",
     "productLink": "https://priceoye.pk/mobile-chargers/joyroom/joyroom-zq-lg3028e3-dual-port-fast-charger-20w"
-  },
-  {
-    "title": "Tronsmart Wall Charger WCP02 (60W)",
-    "price": "4,399",
-    "productLink": "https://priceoye.pk/mobile-chargers/tronsmart/tronsmart-wcp02"
   },
   {
     "title": "Airox Fast Charging Adapter 2 Type C Ports PD01",
@@ -11690,6 +11690,21 @@
     "productLink": "https://priceoye.pk/mobile-chargers/infinix/infinix-xc06-kit-30w-charger"
   },
   {
+    "title": "Tronsmart 2 in 1 Power Bank and Wall charger (WPB01)",
+    "price": "3,899",
+    "productLink": "https://priceoye.pk/mobile-chargers/tronsmart/tronsmart-2-in-1-wall-charger-wpb01"
+  },
+  {
+    "title": "Samsung 3 Pin Travel Adapter (45W)",
+    "price": "4,999",
+    "productLink": "https://priceoye.pk/mobile-chargers/samsung/samsung-3-pin-travel-adapter-45w"
+  },
+  {
+    "title": "Oraimo Usb Charger E65S+L53 (Lightning Cable 2A)",
+    "price": "499",
+    "productLink": "https://priceoye.pk/mobile-chargers/oraimo/oraimo-usb-charger-e65s-l53-lightning-cable-2a"
+  },
+  {
     "title": "Baseus GaN3 Fast Charger 30W EU",
     "price": "4,199",
     "productLink": "https://priceoye.pk/mobile-chargers/baseus/baseus-gan3-fast-charger-30w-eu"
@@ -11718,21 +11733,6 @@
     "title": "Joyroom PD 25W Mini Intelligent Fast Charger (L-P251)",
     "price": "2,699",
     "productLink": "https://priceoye.pk/mobile-chargers/joyroom/joyroom-pd-25w-mini-intelligent-fast-charger-l-p251"
-  },
-  {
-    "title": "Tronsmart 2 in 1 Power Bank and Wall charger (WPB01)",
-    "price": "3,899",
-    "productLink": "https://priceoye.pk/mobile-chargers/tronsmart/tronsmart-2-in-1-wall-charger-wpb01"
-  },
-  {
-    "title": "Samsung 3 Pin Travel Adapter (45W)",
-    "price": "4,999",
-    "productLink": "https://priceoye.pk/mobile-chargers/samsung/samsung-3-pin-travel-adapter-45w"
-  },
-  {
-    "title": "Oraimo Usb Charger E65S+L53 (Lightning Cable 2A)",
-    "price": "499",
-    "productLink": "https://priceoye.pk/mobile-chargers/oraimo/oraimo-usb-charger-e65s-l53-lightning-cable-2a"
   },
   {
     "title": "Choetech GaN USB Type C 30W Charger (PD5007)",
@@ -11900,6 +11900,16 @@
     "productLink": "https://priceoye.pk/mobile-chargers/space/space-metal-series-dual-port-charger"
   },
   {
+    "title": "Aukey Swift PD Wall Charger 25W (PA-R1A)",
+    "price": "2,700",
+    "productLink": "https://priceoye.pk/mobile-chargers/aukey/aukey-swift-pd-wall-charger-25w-pa-r1a"
+  },
+  {
+    "title": "Space Micro USB Charger 2.4A (WC-105)",
+    "price": "735",
+    "productLink": "https://priceoye.pk/mobile-chargers/space/space-micro-usb-charger"
+  },
+  {
     "title": "Baseus GaN Mini Quick Charger (45W)",
     "price": "4,999",
     "productLink": "https://priceoye.pk/mobile-chargers/baseus/baseus-gan-mini-quick-charger-60w"
@@ -11918,16 +11928,6 @@
     "title": "Baseus Digital Display 3-USB Charger (3.4A)",
     "price": "1,800",
     "productLink": "https://priceoye.pk/mobile-chargers/baseus/baseus-digital-display-3-usb-charger"
-  },
-  {
-    "title": "Aukey Swift PD Wall Charger 25W (PA-R1A)",
-    "price": "2,700",
-    "productLink": "https://priceoye.pk/mobile-chargers/aukey/aukey-swift-pd-wall-charger-25w-pa-r1a"
-  },
-  {
-    "title": "Space Micro USB Charger 2.4A (WC-105)",
-    "price": "735",
-    "productLink": "https://priceoye.pk/mobile-chargers/space/space-micro-usb-charger"
   },
   {
     "title": "Baseus Power Station GaN 2 in 1 Quick Charger (10000mAh + 45W)",
@@ -14530,14 +14530,14 @@
     "productLink": "https://priceoye.pk/power-banks/zendure/zendure-a6pd-45w-power-bank"
   },
   {
-    "title": "Baseus Qpow Digital Display 3A Power Bank (10000mAh)",
-    "price": "7,399",
-    "productLink": "https://priceoye.pk/power-banks/baseus/baseus-qpow-digital-display-3a-power-bank-10000mah"
-  },
-  {
     "title": "Anker Powerbank Magnetic Battery 622 (MagGo)",
     "price": "9,399",
     "productLink": "https://priceoye.pk/power-banks/anker/anker-powerbank-magnetic-battery-622-maggo"
+  },
+  {
+    "title": "Baseus Qpow Digital Display 3A Power Bank (10000mAh)",
+    "price": "7,399",
+    "productLink": "https://priceoye.pk/power-banks/baseus/baseus-qpow-digital-display-3a-power-bank-10000mah"
   },
   {
     "title": "Hottu Wireless Power Bank HT31 10000mah",
@@ -14605,6 +14605,11 @@
     "productLink": "https://priceoye.pk/power-banks/baseus/baseus-22-5w-starlight-digital-display-power-bank-20000mah"
   },
   {
+    "title": "Space Core Power Bank 20000mAh (CR-081)",
+    "price": "5,175",
+    "productLink": "https://priceoye.pk/power-banks/space/space-core-power-bank"
+  },
+  {
     "title": "Baseus Bipow Power Bank (1000mAh)",
     "price": "3,099",
     "productLink": "https://priceoye.pk/power-banks/baseus/baseus-bipow-power-bank-1000mah"
@@ -14618,11 +14623,6 @@
     "title": "Baseus Mini JA Power Bank (30000mAh)",
     "price": "6,899",
     "productLink": "https://priceoye.pk/power-banks/baseus/baseus-mini-ja-power-bank-30000mah"
-  },
-  {
-    "title": "Space Core Power Bank 20000mAh (CR-081)",
-    "price": "5,175",
-    "productLink": "https://priceoye.pk/power-banks/space/space-core-power-bank"
   },
   {
     "title": "Dany Spiro Power Bank (10000mAh)",
@@ -15905,41 +15905,6 @@
     "productLink": "https://priceoye.pk/ac/hisense/hisense-2-0-ton-floor-standing-ac-her2400hc"
   },
   {
-    "title": "Haier 1.0 Ton Puri Inverter AC(HSU-12HJ/012USDC(G)",
-    "price": "143,171",
-    "productLink": "https://priceoye.pk/ac/haier/haier-1-0-ton-puri-inverter-ac-hsu-12hj-012usdc-g"
-  },
-  {
-    "title": "Haier 1.0 Ton Pearl Inverte Series AC(HSU-12HFPAA/013WUSDC(B)",
-    "price": "149,000",
-    "productLink": "https://priceoye.pk/ac/haier/haier-1-0-ton-pearl-inverte-series-ac-hsu-12hfpaa-013wusdc-b"
-  },
-  {
-    "title": "Haier 1.0 Ton Marvel Inverter Series AC(HSU-12HFMAE-013WISDC(W)",
-    "price": "74,000",
-    "productLink": "https://priceoye.pk/ac/haier/haier-1-0-ton-marvel-inverter-series-ac-hsu-12hfmae-013wisdc-w"
-  },
-  {
-    "title": "Haier 1.0 Ton Turbo Cool Series(HSU-12CFCM-013L(W)",
-    "price": "116,499",
-    "productLink": "https://priceoye.pk/ac/haier/haier-1-0-ton-turbo-cool-series-hsu-12cfcm-013l-w"
-  },
-  {
-    "title": "Haier 1.5 Ton Turbo Cool Series(HSU-18CFCM-013L(W)",
-    "price": "128,999",
-    "productLink": "https://priceoye.pk/ac/haier/haier-1-5-ton-turbo-cool-series-hsu-18cfcm-013l-w"
-  },
-  {
-    "title": "Orient 4.0 Ton Standing Ultimate AC",
-    "price": "410,000",
-    "productLink": "https://priceoye.pk/ac/orient/orient-4-0-ton-standing-ultimate-ac"
-  },
-  {
-    "title": "Orient 1.0 Ton Orbit Series DC Inverter",
-    "price": "118,000",
-    "productLink": "https://priceoye.pk/ac/orient/orient-1-0-ton-orbit-series-dc-inverter"
-  },
-  {
     "title": "Gree 1.5 Ton Fairy Series Inverter Split AC (GS18FITH1S)",
     "price": "143,499",
     "productLink": "https://priceoye.pk/ac/gree/gree-1-5-ton-fairy-series-inverter-split-ac-gs18fith1s"
@@ -15948,6 +15913,41 @@
     "title": "PEL 1.0 Ton Fit Series (12KFIT)",
     "price": "102,900",
     "productLink": "https://priceoye.pk/ac/pel/pel-1-0-ton-fit-series-12kfit"
+  },
+  {
+    "title": "PEL1.5 Ton Majestic Series 4D (18KMajestic)",
+    "price": "77,500",
+    "productLink": "https://priceoye.pk/ac/pel/pel1-5-ton-majestic-series-4d-18kmajestic"
+  },
+  {
+    "title": "PEL 1.5 Ton Aero Plus Series InverterOn (18K AERO Plus)",
+    "price": "107,500",
+    "productLink": "https://priceoye.pk/ac/pel/pel-1-5-ton-aero-plus-series-inverteron-18k-aero-plus"
+  },
+  {
+    "title": "Kenwood 1 Ton eTitan Plus Split AC(KET-1242S)",
+    "price": "129,240",
+    "productLink": "https://priceoye.pk/ac/kenwood/kenwood-1-ton-etitan-plus-split-ac-ket-1242s"
+  },
+  {
+    "title": "Changhong Ruba 1.5 Ton Smart DC Inverter Series (SDH18FGi)",
+    "price": "95,000",
+    "productLink": "https://priceoye.pk/ac/changhongruba/changhong-ruba-1-5-ton-smart-dc-inverter-series-sdh18fgi"
+  },
+  {
+    "title": "Changhong Ruba 1.0 Ton Inverter Series (SDC12CW)",
+    "price": "62,999",
+    "productLink": "https://priceoye.pk/ac/changhongruba/changhong-ruba-1-0-ton-inverter-series-sdc12cw"
+  },
+  {
+    "title": "Haier 1.0 Ton Puri Inverter AC(HSU-12HJ/012USDC(G)",
+    "price": "143,171",
+    "productLink": "https://priceoye.pk/ac/haier/haier-1-0-ton-puri-inverter-ac-hsu-12hj-012usdc-g"
+  },
+  {
+    "title": "Haier 1.0 Ton Pearl Inverte Series AC(HSU-12HFPAA/013WUSDC(B)",
+    "price": "149,000",
+    "productLink": "https://priceoye.pk/ac/haier/haier-1-0-ton-pearl-inverte-series-ac-hsu-12hfpaa-013wusdc-b"
   },
   {
     "title": "Haier 14 cu ft Digital Inverter Series (HRF398IDB-RT)",

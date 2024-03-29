@@ -6,7 +6,7 @@ const fs = require("fs");
 
   const browser = await puppeteer.launch({
     timeout: 0,
-    headless: false,
+    headless: false, // Run in headless mode
     defaultViewport: null, // Set viewport to null for full page rendering
     args: [
       "--no-sandbox", // Disable sandbox mode
