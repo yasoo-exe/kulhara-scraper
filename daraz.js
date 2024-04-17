@@ -6,20 +6,29 @@ console.time("Execution Time");
 (async () => {
   const data = [];
   const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--disable-images", "--disable-extensions", "--disable-stylesheets"],
+    headless: false,
     timeout: 0, // Set timeout to zero
   });
 
   const page = await browser.newPage();
-  await page.goto(`https://www.daraz.pk/featurephones/`, {
+
+  await page.setRequestInterception(true, { timeout: 0 });
+  page.on("request", (request) => {
+    if (request.resourceType() === "image") {
+      request.abort();
+    } else {
+      request.continue();
+    }
+  });
+
+  await page.goto(`https://www.daraz.pk/baseballs/`, {
     timeout: 0, // Set timeout to zero
     waitUntil: "networkidle0", // Wait until there are no more than 0 network connections
   });
 
   let hasNextPage = true;
   while (hasNextPage) {
-    await page.waitForSelector(".gridItem--Yd0sa");
+    await page.waitForSelector(".gridItem--Yd0sa", { timeout: 0 });
     console.log("Selector found");
 
     const products = await page.$$eval(".gridItem--Yd0sa", (products) => {
@@ -44,8 +53,11 @@ console.time("Execution Time");
       if (isLastItemDisabled) {
         hasNextPage = false;
       } else {
-        await lastPaginationItem.click();
-        await page.waitForSelector(".gridItem--Yd0sa");
+        const lastPaginationItemHandle =
+          await lastPaginationItem.evaluateHandle((node) => node);
+        await lastPaginationItemHandle.click();
+        await page.waitForSelector(".gridItem--Yd0sa", { timeout: 0 });
+        await lastPaginationItemHandle.dispose();
       }
     } else {
       hasNextPage = false;
