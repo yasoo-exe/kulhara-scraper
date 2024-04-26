@@ -1,13 +1,66 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
+const getCategories = async () => {
+  const browser = await puppeteer.launch({
+    headless: false,
+    timeout: 0,
+  });
+  const page = await browser.newPage();
 
-console.time("Execution Time");
+  await page.setRequestInterception(true, { timeout: 0 });
+  page.on("request", (request) => {
+    if (request.resourceType() === "image") {
+      request.abort();
+    } else {
+      request.continue();
+    }
+  });
 
-(async () => {
+  await page.goto("https://www.daraz.pk", {
+    timeout: 0,
+  });
+  await page.waitForSelector(".lzd-site-menu-sub-item", { timeout: 0 });
+  const categories = await page.$$eval(
+    ".lzd-site-menu-sub-item",
+    (categories) => {
+      return categories.map((category) => {
+        const title = category.querySelector("a span").textContent;
+        const link = category.querySelector("a").href;
+        return { title, link };
+      });
+    }
+  );
+  await browser.close();
+
+  return categories; // Return the categories array
+};
+
+getCategories().then((categoriesLinks) =>
+  // ... existing code ...
+
+  getCategories().then((categoriesLinks) => {
+    // Call productsFromCategoryScraper for each link in categoriesLinks
+    const promises = categoriesLinks.map((category) =>
+      productsFromCategoryScraper(category.link)
+    );
+
+    Promise.all(promises)
+      .then((results) => {
+        // Process the results here
+        console.log(results);
+      })
+      .catch((error) => {
+        // Handle any errors
+        console.error(error);
+      });
+  })
+);
+
+const productsFromCategoryScraper = async (categoryLink) => {
   const data = [];
   const browser = await puppeteer.launch({
     headless: false,
-    timeout: 0, // Set timeout to zero
+    timeout: 0,
   });
 
   const page = await browser.newPage();
@@ -21,15 +74,14 @@ console.time("Execution Time");
     }
   });
 
-  await page.goto(`https://www.daraz.pk/baseballs/`, {
-    timeout: 0, // Set timeout to zero
-    waitUntil: "networkidle0", // Wait until there are no more than 0 network connections
+  await page.goto(categoryLink, {
+    timeout: 0,
+    waitUntil: "networkidle0",
   });
 
   let hasNextPage = true;
   while (hasNextPage) {
     await page.waitForSelector(".gridItem--Yd0sa", { timeout: 0 });
-    console.log("Selector found");
 
     const products = await page.$$eval(".gridItem--Yd0sa", (products) => {
       return products.map((product) => {
@@ -44,6 +96,7 @@ console.time("Execution Time");
     const pagination = await page.$(".ant-pagination");
 
     if (pagination) {
+      console.log("there is pagination");
       const lastPaginationItem = await pagination.$("li.ant-pagination-next a");
       const isLastItemDisabled = await pagination.$eval(
         "li.ant-pagination-next",
@@ -70,10 +123,7 @@ console.time("Execution Time");
     return index === self.findIndex((t) => t.link === item.link);
   });
 
-  console.log("Total products scraped:", refinedData.length);
-
   const jsonData = JSON.stringify(refinedData, null, 2);
   fs.writeFileSync("daraz_data.json", jsonData);
-
-  console.timeEnd("Execution Time");
-})();
+  console.log("Data has been written to daraz_data.json");
+};
