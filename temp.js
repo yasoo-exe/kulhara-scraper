@@ -46,15 +46,9 @@ const individualLinks = async (paginationLinks) => {
   console.log(teams);
   console.log(teams.length);
   const jsonString = JSON.stringify(teams);
-  fs.writeFile("data.json", jsonString, (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log("Data saved to data.json");
-    }
-  });
+  fs.writeFile("data.json", jsonString);
 
   await browser.close();
 };
 
-scrapeYears().then((returnedLinks) => individualLinks(returnedLinks));
+scrapeYears().then((returnedLinks) => individualLinks([returnedLinks]));
