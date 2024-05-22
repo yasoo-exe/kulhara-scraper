@@ -18,6 +18,7 @@ const scrapeCategories = async () => {
     }
   );
   await browser.close();
+  console.log(categoryLinks);
   return categoryLinks;
 };
 
@@ -29,52 +30,57 @@ const individualLinks = async (categoryLinks) => {
     const productsPage = await browser.newPage();
     await productsPage.goto(`${categoriesObj[i].link}`, {
       timeout: 0,
+      waitUntil: "networkidle0",
     });
 
     let hasNextPage = true;
 
     while (hasNextPage) {
-      await productsPage.waitForSelector(".gridItem--Yd0sa", {
-        timeout: 500,
-      });
-      console.log("found the selector!");
-
-      const productsPerCategory = await productsPage.$$eval(
-        ".gridItem--Yd0sa",
-        (items) => {
-          return items.map((item) => {
-            const title = item.querySelector(".title-wrapper--IaQ0m").innerText;
-            const link = item.querySelector("#id-a-link").href;
-            console.log("found products");
-            return { title, link };
-          });
-        }
-      );
-      categoriesObj[i].products.push(...productsPerCategory);
-      console.log("pushed products!");
-
-      const pagination = await page.$(".ant-pagination");
-
-      if (pagination) {
-        console.log("there is pagination");
-        const lastPaginationItem = await pagination.$(
-          "li.ant-pagination-next a"
+      try {
+        await productsPage.waitForSelector(".gridItem--Yd0sa");
+        const productsPerCategory = await productsPage.$$eval(
+          ".gridItem--Yd0sa",
+          (items) => {
+            return items.map((item) => {
+              const title = item.querySelector(
+                ".title-wrapper--IaQ0m"
+              ).innerText;
+              const link = item.querySelector("#id-a-link").href;
+              return { title, link };
+            });
+          }
         );
-        const isLastItemDisabled = await pagination.$eval(
-          "li.ant-pagination-next",
-          (item) => item.getAttribute("aria-disabled") === "true"
-        );
+        categoriesObj[i].products.push(...productsPerCategory);
 
-        if (isLastItemDisabled) {
-          hasNextPage = false;
+        const pagination = await productsPage.$(".ant-pagination");
+
+        if (pagination) {
+          console.log("there is pagination");
+          const lastPaginationItem = await pagination.$(
+            "li.ant-pagination-next a"
+          );
+          const isLastItemDisabled = await pagination.$eval(
+            "li.ant-pagination-next",
+            (item) => item.getAttribute("aria-disabled") === "true"
+          );
+
+          if (isLastItemDisabled) {
+            hasNextPage = false;
+          } else {
+            const lastPaginationItemHandle =
+              await lastPaginationItem.evaluateHandle((node) => node);
+            await lastPaginationItemHandle.click();
+            await lastPaginationItemHandle.dispose();
+          }
         } else {
-          const lastPaginationItemHandle =
-            await lastPaginationItem.evaluateHandle((node) => node);
-          await lastPaginationItemHandle.click();
-          await page.waitForSelector(".gridItem--Yd0sa", { timeout: 0 });
-          await lastPaginationItemHandle.dispose();
+          hasNextPage = false;
+          console.log(
+            "total products in the category: ",
+            categoriesObj[i].products.length
+          );
         }
-      } else {
+      } catch (err) {
+        console.log(err);
         hasNextPage = false;
       }
     }
@@ -90,8 +96,9 @@ const individualLinks = async (categoryLinks) => {
     }
   });
   console.log("data has been written to daddydaraz.json");
+  await browser.close();
 };
 
 scrapeCategories().then((returnedCategories) =>
-  individualLinks(returnedCategories)
+  individualLinks([{ link: "https://www.daraz.pk/smartphones/", products: [] }])
 );
