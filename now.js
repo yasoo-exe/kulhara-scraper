@@ -169,11 +169,13 @@ const links = [
   },
 ];
 
-var n = 1;
-
 const jinx = [
   {
     url: "https://www.daraz.pk/smartphones/",
+    products: [],
+  },
+  {
+    url: "https://www.daraz.pk/baseballs",
     products: [],
   },
 ];
@@ -217,10 +219,10 @@ const getProducts = async (links) => {
         links[i].products.push(...products);
 
         try {
-          await page.waitForSelector("li.ant-pagination-next", {
+          await page.waitForSelector(".ant-pagination", {
             timeout: 300000,
           });
-          console.log(`there is pagination to page no ${n + 1} `);
+          console.log(`there is pagination `);
 
           const lastPaginationItem = await page.$("li.ant-pagination-next a");
           const isLastItemDisabled = await page.$eval(
@@ -245,6 +247,7 @@ const getProducts = async (links) => {
     console.log(links[i].products.length);
     await browser.close();
   }
+
   const jsonString = JSON.stringify(links);
   fs.writeFile("singleton.json", jsonString, (err) => {
     if (err) {
